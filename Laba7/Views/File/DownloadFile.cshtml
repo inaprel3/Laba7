@@ -1,0 +1,44 @@
+﻿@model Laba7.Models.DownloadFileModel
+
+<style>
+    body {
+        background-color: lavender;
+        font-size: 18px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    input[type="text"], button {
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 30%;
+        padding: 10px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+</style>
+
+<form method="post">
+    <div>
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div>
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div>
+        <label for="fileName">Назва файлу:</label>
+        <input type="text" id="fileName" name="fileName" required>
+    </div>
+    <button type="submit">Продовжити</button>
+</form>
